@@ -19,14 +19,23 @@
         </nav>
     </header>
     <main>
-        <div id="search-input-catalogue-bar">
-            <!-- Search bar -->
+        <div id="search-input-catalogue-bar" style="margin-bottom: 2rem;">
+            <input type="text" placeholder="Rechercher des produits artisanaux..." style="padding: 0.5rem; width: 100%; max-width: 400px;">
         </div>
-        <aside id="catalogue-sidebar-filters">
-            <!-- Sidebar filters -->
-        </aside>
-        <div class="product-grid">
-            <!-- Product list -->
+        <div style="display: flex; gap: 2rem;">
+            <aside id="catalogue-sidebar-filters" style="flex: 1; background: #fff; padding: 1rem; border-radius: 8px;">
+                <h3>Filtres</h3>
+                <p>Catégorie</p>
+                <p>Prix</p>
+            </aside>
+            <div class="product-grid" style="flex: 3; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+                <div class="product-card" style="background: #fff; padding: 1rem; border-radius: 8px; text-align: center;">
+                    <div style="height: 150px; background: var(--color-bg-beige); margin-bottom: 1rem;"></div>
+                    <h3 class="product-card-title-text">Statue en Ebène</h3>
+                    <p style="color: var(--color-accent-gold); font-weight: bold;">45.00 €</p>
+                    <a href="product.html" style="display: inline-block; padding: 0.5rem 1rem; background: var(--color-primary-green); color: white; border-radius: 4px;">Voir le produit</a>
+                </div>
+            </div>
         </div>
     </main>
 </body>
