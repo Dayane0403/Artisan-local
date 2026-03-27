@@ -3,24 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Détail Produit - Marketplace Produits Locaux</title>
+    <title>Détail Produit - Afrik'Art</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style-product.css">
 </head>
 <body>
-    <header>
-        <h1>Marketplace Produits Locaux</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="catalogue.html">Catalogue</a>
-            <a href="sellers.html">Vendeurs</a>
-            <a href="contact.html">Contact</a>
-            <a href="cart.html">Panier</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Produit</h2>
-        <!-- Galleries and info -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🌍</div>
+            Afrik<span>'Art</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">Accueil</a>
+            <a href="catalogue.html" class="nav-btn hidden">Catalogue</a>
+            <a href="sellers.html" class="nav-btn">Artisans</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <div class="nav-search-box">
+                <input type="text" placeholder="Rechercher...">
+                <button>🔍</button>
+            </div>
+            <a href="cart.html" class="cart-btn">
+                🛒 Panier <span class="cart-count">2</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="product-detail-page">
+        <a href="catalogue.html" class="back-btn">← Retour au catalogue</a>
+        <div class="breadcrumb">
+            <a href="index.html">Accueil</a><span>/</span>
+            <a href="catalogue.html">Textiles</a><span>/</span>
+            <span>Bogolan Tissu Artisanal</span>
+        </div>
+        
+        <div class="product-detail-grid">
+            <div>
+                <div class="main-img-container">
+                    <span style="font-size:120px">🟫</span>
+                    <button class="zoom-btn">🔍</button>
+                </div>
+                <div class="thumb-strip">
+                    <div class="thumb active">🟫</div>
+                    <div class="thumb">🌿</div>
+                    <div class="thumb">📦</div>
+                    <div class="thumb">✨</div>
+                </div>
+            </div>
+            <div class="product-detail-info">
+                <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-light); font-weight: 700; margin-bottom: 6px;">Mali · Textiles</div>
+                <h1>Bogolan Tissu Artisanal</h1>
+                <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 12px;">
+                    <span style="color: var(--gold); font-size: 18px;">★★★★★</span>
+                    <span style="font-size: 12px; color: var(--text-light);">(24 avis)</span>
+                </div>
+                <div class="detail-price">85.00 €</div>
+                <div class="detail-desc">Tissu traditionnel malien teint à la boue fermentée selon des méthodes ancestrales. Chaque motif raconte une histoire de la culture bambara.</div>
+                <div class="detail-meta">
+                    <p><strong>Origine :</strong> Mali</p>
+                    <p><strong>Artisan :</strong> Sékou Coulibaly</p>
+                    <p><strong>Catégorie :</strong> Textiles</p>
+                </div>
+                <div class="qty-selector">
+                    <span class="qty-label">Quantité :</span>
+                    <div class="qty-controls">
+                        <button class="qty-btn">−</button>
+                        <span class="qty-num">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <h2>Avis Clients</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Absolument magnifique ! La qualité est incroyable et l'emballage soigné."</div>
+                    <div class="review-author">Sophie L.</div>
+                    <div class="review-date">27.05.2025</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Très beau produit, parfait pour décorer mon salon. Je recommande vivement !"</div>
+                    <div class="review-author">Thomas D.</div>
+                    <div class="review-date">10.06.2025</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Authentique et durable, je recommande vivement. Livraison rapide et soignée."</div>
+                    <div class="review-author">Amina K.</div>
+                    <div class="review-date">03.11.2025</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar-section">
+            <h2>Produits Similaires</h2>
+            <div class="similar-grid">
+                <a href="#" class="similar-card">
+                    <div class="similar-img">🎀</div>
+                    <div class="similar-info">
+                        <div class="similar-name">Écharpe Kente du Ghana</div>
+                        <div><span class="similar-price">75.00 €</span><span class="similar-link">Voir plus</span></div>
+                    </div>
+                </a>
+                <a href="#" class="similar-card">
+                    <div class="similar-img">🧶</div>
+                    <div class="similar-info">
+                        <div class="similar-name">Couverture Tissée</div>
+                        <div><span class="similar-price">110.00 €</span><span class="similar-link">Voir plus</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">À propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Livraison</a>
+            <a href="#">Retours</a>
+        </div>
+        <div style="font-size:13px;color:rgba(245,240,232,.5)">© 2026 Marketplace Produits Locaux</div>
+        <div class="footer-socials">
+            <div class="social-icon">f</div><div class="social-icon">in</div><div class="social-icon">yt</div><div class="social-icon">𝕏</div>
+        </div>
+    </footer>
 </body>
 </html>

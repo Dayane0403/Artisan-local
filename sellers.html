@@ -3,31 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendeurs - Marketplace Produits Locaux</title>
+    <title>Nos Artisans - Afrik'Art</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style-sellers.css">
 </head>
 <body>
-    <header>
-        <h1>Marketplace Produits Locaux</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="catalogue.html">Catalogue</a>
-            <a href="sellers.html">Vendeurs</a>
-            <a href="contact.html">Contact</a>
-            <a href="cart.html">Panier</a>
-        </nav>
-    </header>
-    <main>
-        <h2 style="text-align: center;">Nos Vendeurs Partenaires</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2rem; padding: 2rem 0;">
-            <div class="seller-profile-card-item" style="background: #fff; padding: 2rem; border-radius: 8px; text-align: center;">
-                <div style="width: 100px; height: 100px; border-radius: 50%; background: var(--color-accent-gold); margin: 0 auto 1rem;"></div>
-                <h3>Atelier Diallo</h3>
-                <p>Spécialiste de la sculpture sur bois depuis 3 générations.</p>
-                <a href="#" style="color: var(--color-primary-green); font-weight: bold;">Voir la boutique</a>
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🌍</div>
+            Afrik<span>'Art</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">Accueil</a>
+            <a href="catalogue.html" class="nav-btn">Catalogue</a>
+            <a href="sellers.html" class="nav-btn active">Artisans</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <div class="nav-search-box">
+                <input type="text" placeholder="Rechercher...">
+                <button>🔍</button>
             </div>
+            <a href="cart.html" class="cart-btn">
+                🛒 Panier <span class="cart-count">2</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="sellers-page">
+        <div class="sellers-hero">
+            <h1>Nos Artisans, Nos Histoires</h1>
+            <p>Découvrez les maîtres de la création africaine, connectez-vous à leur passion.</p>
+        </div>
+
+        <div class="featured-sellers-grid">
+            <!-- REQUIS : class="seller-profile-card-item" -->
+            <a href="catalogue.html" class="seller-profile-card-item">
+                <div class="seller-img-area">
+                    <span style="font-size:80px">🧺</span>
+                    <div class="seller-country-badge">Sénégal</div>
+                </div>
+                <div class="featured-seller-info">
+                    <h3>Amina Diallo</h3>
+                    <div class="seller-specialty">Tissage de paniers</div>
+                    <div class="seller-bio">Tisserande experte, Amina utilise des fibres naturelles locales pour créer des paniers uniques qui racontent l'histoire de sa communauté.</div>
+                    <button class="voir-btn">Voir la boutique</button>
+                </div>
+            </a>
+
+            <a href="catalogue.html" class="seller-profile-card-item">
+                <div class="seller-img-area">
+                    <span style="font-size:80px">🪵</span>
+                    <div class="seller-country-badge">Ghana</div>
+                </div>
+                <div class="featured-seller-info">
+                    <h3>Kwame Asante</h3>
+                    <div class="seller-specialty">Sculpture sur bois</div>
+                    <div class="seller-bio">Sculpteur renommé, Kwame insuffle une vie ancienne dans le bois, créant des masques qui relient le passé au présent.</div>
+                    <button class="voir-btn">Voir la boutique</button>
+                </div>
+            </a>
+
+            <a href="catalogue.html" class="seller-profile-card-item">
+                <div class="seller-img-area">
+                    <span style="font-size:80px">💍</span>
+                    <div class="seller-country-badge">Kenya</div>
+                </div>
+                <div class="featured-seller-info">
+                    <h3>Nia Moyo</h3>
+                    <div class="seller-specialty">Joaillerie Maasai</div>
+                    <div class="seller-bio">Joaillière visionnaire, Nia fusionne techniques ancestrales et design contemporain pour des pièces d'une rare beauté.</div>
+                    <button class="voir-btn">Voir la boutique</button>
+                </div>
+            </a>
+        </div>
+
+        <div style="font-family: var(--font-heading); font-size: 38px; font-weight: 700; color: var(--text-dark); margin-bottom: 24px;">Tous les Artisans</div>
+        
+        <div class="more-sellers-grid">
+            <a href="catalogue.html" class="seller-mini-card">
+                <div class="seller-avatar">🧵</div>
+                <div class="seller-mini-info">
+                    <h4>Babatunde Adebayo</h4>
+                    <div class="seller-country">Nigeria · Tissage traditionnel</div>
+                    <div class="seller-mini-bio">Artiste textile maître dans l'art du tissage yoruba.</div>
+                    <button class="voir-mini-btn">Voir la boutique</button>
+                </div>
+            </a>
+            <a href="catalogue.html" class="seller-mini-card">
+                <div class="seller-avatar">🏺</div>
+                <div class="seller-mini-info">
+                    <h4>Zahara Hassan</h4>
+                    <div class="seller-country">Maroc · Céramique berbère</div>
+                    <div class="seller-mini-bio">Céramiste passionnée alliant formes ancestrales.</div>
+                    <button class="voir-mini-btn">Voir la boutique</button>
+                </div>
+            </a>
+            <a href="catalogue.html" class="seller-mini-card">
+                <div class="seller-avatar">👗</div>
+                <div class="seller-mini-info">
+                    <h4>Malika Faye</h4>
+                    <div class="seller-country">Sénégal · Mode et accessoires</div>
+                    <div class="seller-mini-bio">Créatrice de mode réinterprétant les textiles africains.</div>
+                    <button class="voir-mini-btn">Voir la boutique</button>
+                </div>
+            </a>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">À propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Livraison</a>
+            <a href="#">Retours</a>
+        </div>
+        <div style="font-size:13px;color:rgba(245,240,232,.5)">© 2026 Marketplace Produits Locaux</div>
+        <div class="footer-socials">
+            <div class="social-icon">f</div><div class="social-icon">in</div><div class="social-icon">yt</div><div class="social-icon">𝕏</div>
+        </div>
+    </footer>
 </body>
 </html>

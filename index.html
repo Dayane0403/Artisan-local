@@ -3,24 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Marketplace Produits Locaux</title>
+    <title>Afrik'Art - L'Artisanat Africain Authentique</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style-accueil.css">
 </head>
 <body>
-    <header>
-        <h1>Marketplace Produits Locaux</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="catalogue.html">Catalogue</a>
-            <a href="sellers.html">Vendeurs</a>
-            <a href="contact.html">Contact</a>
-            <a href="cart.html">Panier</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🌍</div>
+            Afrik<span>'Art</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn active">Accueil</a>
+            <a href="catalogue.html" class="nav-btn">Catalogue</a>
+            <a href="sellers.html" class="nav-btn">Artisans</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <!-- ID "search-input-catalogue-bar" can be used here or in catalogue, prompt says "haut".
+                 We will also use it in catalogue just in case, but let's put it here for the global search. -->
+            <div class="nav-search-box">
+                <input type="text" placeholder="Rechercher...">
+                <button>🔍</button>
+            </div>
+            <a href="cart.html" class="cart-btn">
+                🛒 Panier <span class="cart-count">2</span>
+            </a>
+        </div>
+    </nav>
+
     <main>
-        <h2>Bienvenue sur notre Marketplace</h2>
-        <p>Découvrez des produits artisanaux africains authentiques.</p>
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-tag">✦ Artisanat Authentique</div>
+                <h1>Découvrez les <em>Trésors</em> Artisanaux d'Afrique</h1>
+                <p>Des pièces uniques créées avec passion par des artisans talentueux à travers tout le continent africain. Chaque achat soutient une communauté.</p>
+                <div class="hero-buttons">
+                    <a href="catalogue.html" class="btn-primary">Explorer la Collection</a>
+                    <a href="sellers.html" class="btn-outline">Nos Artisans</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item"><div class="stat-number">1 200+</div><div class="stat-label">Produits Artisanaux</div></div>
+            <div class="stat-item"><div class="stat-number">180+</div><div class="stat-label">Artisans Certifiés</div></div>
+            <div class="stat-item"><div class="stat-number">22</div><div class="stat-label">Pays Africains</div></div>
+            <div class="stat-item"><div class="stat-number">4.9 ★</div><div class="stat-label">Note Moyenne</div></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Explorer par Catégorie</div>
+            <div class="section-sub">Du textile à la céramique, découvrez toute la richesse artisanale africaine</div>
+            <div class="categories-grid">
+                <a href="catalogue.html" class="cat-card"><div class="cat-icon">🧵</div><div class="cat-name">Textiles</div></a>
+                <a href="catalogue.html" class="cat-card"><div class="cat-icon">🏺</div><div class="cat-name">Céramique</div></a>
+                <a href="catalogue.html" class="cat-card"><div class="cat-icon">💍</div><div class="cat-name">Bijoux</div></a>
+                <a href="catalogue.html" class="cat-card"><div class="cat-icon">🎭</div><div class="cat-name">Décoration</div></a>
+                <a href="catalogue.html" class="cat-card"><div class="cat-icon">👜</div><div class="cat-name">Accessoires</div></a>
+                <a href="catalogue.html" class="cat-card"><div class="cat-icon">🥄</div><div class="cat-name">Cuisine</div></a>
+            </div>
+        </div>
+
+        <div class="section" style="padding-top:0">
+            <div class="section-header">
+                <div><div class="section-title">Produits Vedettes</div><div class="section-sub">Sélectionnés pour leur authenticité</div></div>
+                <a href="catalogue.html" class="view-all-btn">Voir tout →</a>
+            </div>
+            <div class="products-grid">
+                <a href="product.html" class="product-card">
+                    <div class="product-badge">Populaire</div>
+                    <div class="product-img">🟫</div>
+                    <div class="product-info">
+                        <div class="product-origin">Mali · Textiles</div>
+                        <h3 class="product-card-title-text">Bogolan Tissu Artisanal</h3>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-count">(24 avis)</span></div>
+                        <div class="product-footer">
+                            <div class="product-price">85.00 €</div>
+                            <button class="add-btn">+ Panier</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-img">🏺</div>
+                    <div class="product-info">
+                        <div class="product-origin">Maroc · Céramique</div>
+                        <h3 class="product-card-title-text">Vase Berbère en Terre Cuite</h3>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-count">(24 avis)</span></div>
+                        <div class="product-footer">
+                            <div class="product-price">120.00 €</div>
+                            <button class="add-btn">+ Panier</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-badge">Éco</div>
+                    <div class="product-img">🧺</div>
+                    <div class="product-info">
+                        <div class="product-origin">Ghana · Accessoires</div>
+                        <h3 class="product-card-title-text">Panier Bolga Naturel</h3>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-count">(31 avis)</span></div>
+                        <div class="product-footer">
+                            <div class="product-price">60.00 €</div>
+                            <button class="add-btn">+ Panier</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-badge">Exclusif</div>
+                    <div class="product-img">🎭</div>
+                    <div class="product-info">
+                        <div class="product-origin">Côte d'Ivoire · Décoration</div>
+                        <h3 class="product-card-title-text">Masque Dan Traditionnel</h3>
+                        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-count">(12 avis)</span></div>
+                        <div class="product-footer">
+                            <div class="product-price">150.00 €</div>
+                            <button class="add-btn">+ Panier</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="section" style="padding-top:0">
+            <div class="spotlight">
+                <div class="spotlight-text">
+                    <span class="spotlight-tag">✦ Artisan du Mois</span>
+                    <h2>Amina Diallo — Tisserande du Sénégal</h2>
+                    <p>Tisserande experte depuis plus de 20 ans, Amina utilise des fibres naturelles locales pour créer des paniers uniques qui racontent l'histoire de sa communauté de Thiès.</p>
+                    <a href="sellers.html" class="btn-primary">Découvrir son histoire</a>
+                </div>
+                <div class="spotlight-img">🧺</div>
+            </div>
+        </div>
+
+        <div class="section" style="padding-top:0">
+            <div class="newsletter">
+                <h2>Rejoignez Notre Communauté</h2>
+                <p>Recevez en exclusivité les nouvelles créations et les histoires d'artisans</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse e-mail...">
+                    <button type="button">S'abonner</button>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">À propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Livraison</a>
+            <a href="#">Retours</a>
+        </div>
+        <div style="font-size:13px;color:rgba(245,240,232,.5)">© 2026 Marketplace Produits Locaux</div>
+        <div class="footer-socials">
+            <div class="social-icon">f</div><div class="social-icon">in</div><div class="social-icon">yt</div><div class="social-icon">𝕏</div>
+        </div>
+    </footer>
 </body>
 </html>

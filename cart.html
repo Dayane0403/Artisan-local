@@ -3,34 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panier - Marketplace Produits Locaux</title>
+    <title>Mon Panier - Afrik'Art</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style-cart.css">
 </head>
 <body>
-    <header>
-        <h1>Marketplace Produits Locaux</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="catalogue.html">Catalogue</a>
-            <a href="sellers.html">Vendeurs</a>
-            <a href="contact.html">Contact</a>
-            <a href="cart.html">Panier</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Votre Panier</h2>
-        <div style="background: #fff; padding: 1.5rem; border-radius: 8px; max-width: 600px; margin: 2rem auto;">
-            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #ccc; padding-bottom: 1rem; margin-bottom: 1rem;">
-                <span>Statue en Ebène (x1)</span>
-                <strong class="cart-item-price-display">45.00 €</strong>
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🌍</div>
+            Afrik<span>'Art</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">Accueil</a>
+            <a href="catalogue.html" class="nav-btn">Catalogue</a>
+            <a href="sellers.html" class="nav-btn">Artisans</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <div class="nav-search-box">
+                <input type="text" placeholder="Rechercher...">
+                <button>🔍</button>
             </div>
-            <div style="display: flex; justify-content: space-between; font-size: 1.2rem;">
-                <strong>Total</strong>
-                <strong class="cart-item-price-display">45.00 €</strong>
+            <a href="cart.html" class="cart-btn active">
+                🛒 Panier <span class="cart-count">2</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="cart-page">
+        <h1>Mon Panier</h1>
+        <div class="cart-subtitle">2 article(s) dans votre panier</div>
+
+        <div class="cart-layout">
+            <div class="cart-items">
+                <!-- REQUIS: class="cart-item-price-display" -->
+                <div class="cart-item">
+                    <div class="cart-item-img">🟫</div>
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">Bogolan Tissu Artisanal</div>
+                        <div class="cart-item-origin">Mali · Textiles</div>
+                        <div class="cart-item-controls">
+                            <button class="cart-qty-btn">−</button>
+                            <span class="cart-qty">1</span>
+                            <button class="cart-qty-btn">+</button>
+                            <button class="cart-remove">Retirer</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-price-display">85.00 €</div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-img">🏺</div>
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">Vase Berbère en Terre Cuite</div>
+                        <div class="cart-item-origin">Maroc · Céramique</div>
+                        <div class="cart-item-controls">
+                            <button class="cart-qty-btn">−</button>
+                            <span class="cart-qty">1</span>
+                            <button class="cart-qty-btn">+</button>
+                            <button class="cart-remove">Retirer</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-price-display">120.00 €</div>
+                </div>
             </div>
-            <button style="width: 100%; padding: 1rem; background: var(--color-primary-green); color: white; border: none; border-radius: 4px; margin-top: 2rem; cursor: pointer;">Passer la commande</button>
+
+            <div class="cart-summary">
+                <h2>Récapitulatif</h2>
+                <div class="summary-line">
+                    <span class="summary-line-label">Sous-total :</span>
+                    <span class="summary-line-value" style="color:var(--secondary-brown)">205.00 €</span>
+                </div>
+                <div class="summary-line">
+                    <span class="summary-line-label">Frais de livraison :</span>
+                    <span class="summary-line-value">10.00 €</span>
+                </div>
+                <div class="summary-total">
+                    <span class="summary-total-label">Total :</span>
+                    <span class="summary-total-value">215.00 €</span>
+                </div>
+                <button class="checkout-btn">Procéder au paiement</button>
+                <div class="secure-badge">🔒 Paiement Sécurisé</div>
+            </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">À propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Livraison</a>
+            <a href="#">Retours</a>
+        </div>
+        <div style="font-size:13px;color:rgba(245,240,232,.5)">© 2026 Marketplace Produits Locaux</div>
+        <div class="footer-socials">
+            <div class="social-icon">f</div><div class="social-icon">in</div><div class="social-icon">yt</div><div class="social-icon">𝕏</div>
+        </div>
+    </footer>
 </body>
 </html>
