@@ -1,4 +1,5 @@
 /* Styles spécifiques au Produit (Détail) */
+/* ok */
 .product-detail-page { padding: 40px 48px; max-width: 1200px; margin: 0 auto; }
 .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-light); margin-bottom: 32px; font-weight: 700; }
 .breadcrumb a { color: var(--gold); cursor: pointer; text-decoration: none; }
