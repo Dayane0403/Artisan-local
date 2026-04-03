@@ -17,3 +17,10 @@
 .contact-info-icon { font-size: 32px; margin-bottom: 12px; }
 .contact-info-title { font-family: var(--font-heading); font-size: 20px; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
 .contact-info-text { color: var(--text-mid); font-size: 15px; }
+
+@media (max-width: 768px) {
+    .contact-page { padding: 32px 20px; }
+    .contact-hero h1 { font-size: 38px; }
+    .contact-form-container { padding: 28px 20px; }
+    .contact-info-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 30px; }
+}
