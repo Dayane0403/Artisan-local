@@ -1,7 +1,7 @@
 /* Styles spécifiques aux Vendeurs (Artisans) */
 .sellers-page { padding: 48px; }
 .sellers-hero { text-align: center; margin-bottom: 60px; }
-.sellers-hero h1 { font-family: var(--font-heading); font-size: 52px; font-weight: 700; color: var(--text-dark); margin-bottom: 12px; }
+.sellers-hero h1 { fontl-family: var(--font-heading); font-size: 52px; font-weight: 700; color: var(--text-dark); margin-bottom: 12px; }
 .sellers-hero p { font-size: 17px; color: var(--text-light); max-width: 580px; margin: 0 auto; line-height: 1.6; }
 
 /* REQUIS POUR CARTE VENDEUR : class="seller-profile-card-item" pour l'élément vendeur.
