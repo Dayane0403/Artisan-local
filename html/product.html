@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail Produit - Afrik'Art</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/style-product.css">
+</head>
+<body>
+    <!-- Page Produit détail - Dev C -->.
+    <nav>
+        <a href="index.html" class="nav-logo" aria-label="Afriq'Art">
+            <img class="nav-logo-image" src="../images/Logo_design_for_202604022210-removebg-preview.png" alt="Logo Afriq'Art">
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-btn">Accueil</a>
+            <a href="catalogue.html" class="nav-btn hidden">Catalogue</a>
+            <a href="sellers.html" class="nav-btn">Artisans</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <div class="nav-search-box">
+                <input type="text" placeholder="Rechercher...">
+                <button>🔍</button>
+            </div>
+            <a href="cart.html" class="cart-btn">
+                Panier <span class="cart-count">2</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="product-detail-page">
+        <a href="catalogue.html" class="back-btn">← Retour au catalogue</a>
+        <div class="breadcrumb">
+            <a href="index.html">Accueil</a><span>/</span>
+            <a href="catalogue.html" id="bc-category">Textiles</a><span>/</span>
+            <span id="bc-title">Bogolan Tissu Artisanal</span>
+        </div>
+        
+        <div class="product-detail-grid">
+            <div>
+                <div class="main-img-container">
+                    <img src="../images/product-bogolan.jpg" alt="Bogolan" id="main-product-image">
+                    <button class="zoom-btn">🔍</button>
+                </div>
+                <div class="thumb-strip">
+                    <button type="button" class="thumb active" data-gallery-thumb="../images/product-bogolan.jpg"><img src="../images/product-bogolan.jpg" alt="Vue 1"></button>
+                    <button type="button" class="thumb" data-gallery-thumb="../images/product-tapis-africain.jpg"><img src="../images/product-tapis-africain.jpg" alt="Vue 2"></button>
+                    <button type="button" class="thumb" data-gallery-thumb="../images/product-panier-bolga.jpg"><img src="../images/product-panier-bolga.jpg" alt="Vue 3"></button>
+                    <button type="button" class="thumb" data-gallery-thumb="../images/product-suspension-raphia.jpg"><img src="../images/product-suspension-raphia.jpg" alt="Vue 4"></button>
+                </div>
+            </div>
+            <div class="product-detail-info">
+                <div id="prod-origin-cat" style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-light); font-weight: 700; margin-bottom: 6px;">Mali · Textiles</div>
+                <h1 id="prod-title">Bogolan Tissu Artisanal</h1>
+                <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 12px;">
+                    <span id="prod-rating-stars" style="color: var(--gold); font-size: 18px;">★★★★★</span>
+                    <span id="prod-rating-count" style="font-size: 12px; color: var(--text-light);">(24 avis)</span>
+                </div>
+                <div id="prod-price" class="detail-price">45 900 FCFA</div>
+                <div id="prod-desc" class="detail-desc">Tissu traditionnel malien teint à la boue fermentée selon des méthodes ancestrales. Chaque motif raconte une histoire de la culture bambara.</div>
+                <div class="detail-meta">
+                    <p><strong>Origine :</strong> <span id="meta-origin">Mali</span></p>
+                    <div style="display: flex; align-items: center; gap: 10px; margin: 8px 0;">
+                        <img id="meta-artisan-img" src="../images/seller-malian.jpg" alt="Artisan" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                        <p style="margin: 0;"><strong>Artisan :</strong> <span id="meta-artisan">Sékou Coulibaly</span></p>
+                    </div>
+                    <p><strong>Catégorie :</strong> <span id="meta-category">Textiles</span></p>
+                </div>
+                <div class="qty-selector">
+                    <span class="qty-label">Quantité :</span>
+                    <div class="qty-controls">
+                        <button class="qty-btn">−</button>
+                        <span class="qty-num">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <h2>Avis Clients</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Absolument magnifique ! La qualité est incroyable et l'emballage soigné."</div>
+                    <div class="review-author">Sophie L.</div>
+                    <div class="review-date">27.05.2025</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Très beau produit, parfait pour décorer mon salon. Je recommande vivement !"</div>
+                    <div class="review-author">Thomas D.</div>
+                    <div class="review-date">10.06.2025</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Authentique et durable, je recommande vivement. Livraison rapide et soignée."</div>
+                    <div class="review-author">Amina K.</div>
+                    <div class="review-date">03.11.2025</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar-section">
+            <h2>Produits Similaires</h2>
+            <div class="similar-grid">
+                <a href="product.html?id=7" class="similar-card">
+                    <div class="similar-img"><img src="../images/product-tapis-africain.jpg" alt="Tapis artisanal"></div>
+                    <div class="similar-info">
+                        <div class="similar-name">Tapis Artisanal Africain</div>
+                        <div><span class="similar-price">42 900 FCFA</span><span class="similar-link">Voir plus</span></div>
+                    </div>
+                </a>
+                <a href="product.html?id=10" class="similar-card">
+                    <div class="similar-img"><img src="../images/product-boite-bijoux.jpg" alt="Boîte à bijoux"></div>
+                    <div class="similar-info">
+                        <div class="similar-name">Boîte à Bijoux Sculptée</div>
+                        <div><span class="similar-price">27 900 FCFA</span><span class="similar-link">Voir plus</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       
+        <div style="font-size:13px;color:rgba(245,240,232,.5)">© 2026 Marketplace Produits Locaux</div>
+        <div class="footer-socials">
+            <div class="social-icon">f</div><div class="social-icon">in</div><div class="social-icon">yt</div><div class="social-icon">𝕏</div>
+        </div>
+    </footer>
+    <script src="../js/product-gallery.js" defer></script>
+    <script src="../js/product-data.js" defer></script>
+</body>
+</html>
+
+
