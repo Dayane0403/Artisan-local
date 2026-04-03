@@ -1,4 +1,5 @@
 /* Styles spécifiques au Contact */
+/* Page de contact - style css */
 .contact-page { padding: 48px; max-width: 800px; margin: 0 auto; }
 .contact-hero { text-align: center; margin-bottom: 40px; }
 .contact-hero h1 { font-family: var(--font-heading); font-size: 52px; font-weight: 700; color: var(--text-dark); margin-bottom: 12px; }
